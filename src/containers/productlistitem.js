@@ -3,7 +3,7 @@ class ProductListItem extends React.Component{
 
      specificProduct= () => {
         console.log(this.props);
-        localStorage.setItem('currentProductId',this.props.product.pid);
+        localStorage.setItem('currentProductId',this.props.product._id);
         this.props.history.push('/product');
      }
 
